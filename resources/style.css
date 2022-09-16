@@ -1,61 +1,135 @@
-html{
-  font-family: Helvetica;
-  font-size: 30px;
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
   color: seashell;
-  background-color:black;
-  opacity:0.9;
+  background-color: black;
   text-align: center;
-  
+}
 
-
-}
-.nav .tcosy{
-    float: left;
-    height:50px ;
-
-}
-.img1{
-    display: flex;
-    flex-direction: column;
-    height: 700px;
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    text-align: center;
-    
-}
-.header{
-    height: 69px;
-    color: seashell;
-    border-bottom: 1px solid seashell;
-}
-.container{
-    display: flex;
-    justify-items: center;
-  align-items: center;
+.flex-container {
   display: flex;
-  color: #fff;
-  position: absolute;
-  margin-left: auto;
-    margin-right: auto;
-    height: 700px;
-    width: 1200px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.nav{
-    display: flex; 
-    text-decoration: underline;
-    cursor: pointer;
-    list-style: none;
-    border-bottom: 1px solid gray;
 
+
+/* Fixed Header and Navigation */
+
+#header {
+  position: fixed;
+  height: 69px;
+  width: 100%;
+  border-bottom: 1px solid seashell;
+  background-color: black;
+  z-index: 1;
+  align-items: center;
 }
-.nav .navtext{
-    display: flex;
-   color: lightgray;
-   flex-direction: row;
-  align-items:flex-end;
+
+#logo {
+  height: 50px;
+  width: auto;
+  padding-left: 10px;
 }
-.img1txt{
-    
+
+nav {
+  flex-grow: 1;
+  text-align: right;
+  display: block;
+}
+
+nav span {
+  padding: 20px 10px;
+  margin: auto;
+  display: inline-block;
+}
+
+a {
+  color: seashell;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Opening Banner */
+
+#main {
+  padding-top: 70px;
+  width: 1200px;
+  margin: auto;
+  opacity: 0.9;
+}
+
+#banner {
+  background-image: url("./img-mission-background.jpg");
+  height: 700px;
+  width: 1200px;
+  padding-top: 70px;
+}
+
+#banner #content {
+  margin: auto;
+  width: 100%;
+  background-color: black;
+}
+
+h2, h4 {
+  margin: 0;
+  padding: 10px;
+}
+
+/* Featured Teas */
+
+img {
+  height: 200px;
+  width: 300px;
+  margin: 10px;
+  display: block;
+}
+
+.tea {
+  font-weight: bold;
+  padding: 5px;
+  display: block;
+}
+
+.item {
+  padding: 5px;
+}
+
+#store {
+  height: 700px;
+  width: 1000px;
+  margin: auto;
+  padding-top: 70px;
+}
+
+/* Locations */
+
+#locations {
+  background-image: url("./img-locations-background.jpg");
+  height: 500px;
+  padding-top: 70px;
+}
+
+p, h3 {
+  display: block;
+  padding: 5px;
+}
+
+.location {
+  background-color: black;
+  width: 300px;
+  margin: 20px;
+  opacity: 0.9;
+}
+
+/* footer */
+
+#contact {
+  height: 200px;
+}
+
+footer {
+  text-align: left;
+  padding-left: 20px;
+  margin-top: 30px;
 }
